@@ -47,7 +47,7 @@ public class FirstMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
-            event.accept(ModItems.TNT_ON_A_STICK);
+            event.accept(ModItems.TNTonAStick);
         }
     }
 

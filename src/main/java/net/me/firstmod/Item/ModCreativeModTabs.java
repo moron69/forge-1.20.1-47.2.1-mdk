@@ -15,9 +15,10 @@ public class ModCreativeModTabs {
     public static final RegistryObject<CreativeModeTab> MOD_TAB = CREATIVE_MODE_TABS.register("mod_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.mod_tab"))
-                    .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.SAPPHIRE.get());
-                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                    .displayItems((Parameters, Output) -> {
+                        Output.accept(ModItems.SAPPHIRE.get());
+                        Output.accept(ModItems.RAW_SAPPHIRE.get());
+                        Output.accept(ModItems.TNTonAStick.get());
                     })
                     .build());
 
